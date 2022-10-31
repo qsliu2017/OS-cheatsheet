@@ -32,6 +32,25 @@ Virtual Memory frees virtual memory management from the size limitations of phys
 |Kernel|[Demand paging](https://en.wikipedia.org/wiki/Demand_paging) (Page fault, Swap)|
 |Process (e.g., `glibc`)|`brk`/`sbrk`|
 
+## Concurrency
+
+### Primitive
+
+|Primitive|
+|:-:|
+|Lock|
+|Condition Variable|
+|Semaphore|
+
+### Deadlock
+
+|Condition||Prevention|
+|:-:|--|--|
+|Mutual exclusion||-|
+|Hold-and-wait||1. *hold*: release all resources before request a new one<br> 2. *wait*: request all resources required in advance|
+|No preemption||release all held resources if occurs wait|
+|Circular wait||request by linear order|
+
 ## Reference
 
 1. [OSTEP](https://pages.cs.wisc.edu/~remzi/OSTEP/)
